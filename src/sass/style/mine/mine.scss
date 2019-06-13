@@ -20,7 +20,7 @@ $phone: 320px;
 
 
 @mixin border {
-  border: 1px solid red;
+  border: 0 solid red;
 }
 
 @mixin flex {
@@ -28,3 +28,9 @@ $phone: 320px;
   justify-content: center;
   align-items: center;
 }
+
+
+//@font-face {
+//  font-family: "Calibri";
+//  src: url("../../../font/Calibri.ttf") format('ttf')
+//}

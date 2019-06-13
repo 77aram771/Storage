@@ -1,0 +1,93 @@
+@import '../mine/mine';
+
+.section_2 {
+  @include flex;
+  flex-direction: column;
+  @include border;
+  width: 100%;
+  min-height: 509px;
+  height: 100%;
+  border: 1px solid #000000;
+  background-color: #233c6d;
+  padding: 25px 0;
+  text-align: center;
+  .section_2_title {
+    margin: 0 0 29px 0;
+    @include flex;
+    @include border;
+    width: 100%;
+    p {
+      color: #ffffff;
+      font-family: "Neo Sans Pro", sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 45px;
+      letter-spacing: 0.7px;
+    }
+  }
+  .section_2_items {
+    @include flex;
+    flex-wrap: wrap;
+    @include border;
+    width: 100%;
+    .section_2_item {
+      margin: 0 23px;
+      .section_2_item_icon {
+
+        img {
+
+        }
+      }
+    }
+  }
+}
+
+@include adaptiv-to(tablet-screens) {
+  .section_2 {
+    padding: 75px 0 0 0;
+
+    .section_2_title {
+
+      p {
+
+      }
+    }
+    .section_2_items {
+
+      .section_2_item {
+
+        .section_2_item_icon {
+
+          img {
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@include adaptiv-to(phone-screens) {
+  .section_2 {
+    padding: 75px 0 0 0;
+
+    .section_2_title {
+
+      p {
+
+      }
+    }
+    .section_2_items {
+
+      .section_2_item {
+
+        .section_2_item_icon {
+
+          img {
+
+          }
+        }
+      }
+    }
+  }
+}

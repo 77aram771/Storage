@@ -1,0 +1,152 @@
+@import '../mine/mine';
+
+.section_3 {
+  @include flex;
+  flex-direction: column;
+  @include border;
+  width: 100%;
+  min-height: 560px;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 25px 0;
+  text-align: center;
+  .section_3_title {
+    margin: 0 0 29px 0;
+    @include flex;
+    @include border;
+    width: 100%;
+    p {
+      color: #000000;
+      font-family: "Neo Sans Pro", sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 45px;
+      letter-spacing: 0.7px;
+    }
+  }
+  .section_3_items {
+    @include flex;
+    flex-wrap: wrap;
+    @include border;
+    width: 100%;
+    .section_3_item {
+      @include flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include border;
+      margin: 0 23px;
+      width: 185px;
+      height: 240px;
+      .section_3_item_title {
+        p {
+          color: #000000;
+          font-family: "Montserrat - Semi Bold", sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0.4px;
+        }
+      }
+      .section_3_item_icon {
+        img {
+          width: 83px;
+          height: 85px;
+        }
+      }
+      .section_3_item_text {
+        text-align: center;
+        p {
+          color: #000000;
+          font-family: "Neo Sans Pro", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          /* Text style for "Lorem ipsu" */
+          letter-spacing: 0.32px;
+        }
+      }
+    }
+    .arrow_box {
+      @include flex;
+      @include border;
+      width: 50px;
+      height: 240px;
+      .arrow_img {
+        img {
+          width: 28px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include adaptiv-to(tablet-screens) {
+  .section_3 {
+    padding: 75px 0 0 0;
+
+    .section_3_title {
+
+      p {
+
+      }
+    }
+    .section_3_items {
+
+      .section_3_item {
+        margin: 0 15px;
+        .section_3_item_icon {
+
+          img {
+
+          }
+        }
+      }
+      .arrow_box {
+
+
+        .arrow_img {
+          img {
+
+          }
+        }
+      }
+
+    }
+
+  }
+}
+
+@include adaptiv-to(phone-screens) {
+  .section_3 {
+    padding: 75px 0 0 0;
+
+    .section_3_title {
+
+      p {
+
+      }
+    }
+    .section_3_items {
+
+      .section_3_item {
+
+        .section_3_item_icon {
+
+          img {
+
+          }
+        }
+      }
+      .arrow_box {
+        width: 200px;
+        height: 80px;
+        .arrow_img {
+          img {
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+}

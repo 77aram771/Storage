@@ -1,7 +1,18 @@
-@import "header/nav";
-@import "mine/mine";
+@import "header/header";
+@import "section_1/section";
+@import "section_2/section";
+@import "section_3/section";
+@import "section_4/section";
+@import "footer/footer";
 
-
+.global {
+  @include flex;
+  flex-direction: column;
+  @include border;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
 
 
 

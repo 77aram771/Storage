@@ -1,0 +1,127 @@
+@import '../mine/mine';
+
+.section_1 {
+  @include flex;
+  flex-direction: column;
+  @include border;
+  width: 100%;
+  min-height: 591px;
+  height: 100%;
+  background-color: #fff;
+  .section_1_title {
+    margin: 0 0 35px 0;
+    @include flex;
+    @include border;
+    width: 100%;
+    p {
+      text-align: center;
+      color: #000000;
+      font-family: "Neo Sans Pro", sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 45px;
+      letter-spacing: 0.7px;
+    }
+  }
+  .section_1_items {
+    @include flex;
+    flex-wrap: wrap;
+    @include border;
+    width: 100%;
+    .section_1_item {
+      @include flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      @include border;
+      width: 208px;
+      height: 240px;
+      margin: 0 23px;
+      .section_1_item_icon {
+        @include flex;
+        @include border;
+        width: 170px;
+        height: 127px;
+        background-color: #9af0e0;
+        margin: 0 0 27px 0;
+        border-radius: 50%;
+        img {
+          width: 64px;
+        }
+      }
+      .section_1_item_text {
+        @include flex;
+        @include border;
+
+        p {
+          color: #000000;
+          font-family: "Montserrat - Semi Bold", sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 26px;
+          /* Text style for "I am a , f" */
+          letter-spacing: 0.4px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@include adaptiv-to(tablet-screens) {
+  .section_1 {
+    margin: 75px 0 0 0;
+
+    .section_1_title {
+
+      p {
+
+      }
+    }
+    .section_1_items {
+
+      .section_1_item {
+
+        .section_1_item_icon {
+
+          img {
+
+          }
+        }
+        .section_1_item_text {
+
+          p {
+          }
+        }
+      }
+    }
+  }
+}
+
+@include adaptiv-to(phone-screens) {
+  .section_1 {
+    margin: 75px 0 0 0;
+    .section_1_title {
+
+      p {
+
+      }
+    }
+    .section_1_items {
+
+      .section_1_item {
+
+        .section_1_item_icon {
+
+          img {
+
+          }
+        }
+        .section_1_item_text {
+
+          p {
+          }
+        }
+      }
+    }
+  }
+}
